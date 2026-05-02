@@ -1,0 +1,50 @@
+.notes-container {
+  padding: 20px;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.note-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.view-btn {
+  background: #10b981;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.upload-container .primary-btn {
+  background: #10b981 !important; /* force blue */
+}
+
+.download-btn {
+  background: #2563eb;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

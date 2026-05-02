@@ -1,0 +1,760 @@
+/* 🔹 Reset */
+
+/* 🔹 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #0a1f44;
+  color: white;
+  padding: 15px 40px;
+}
+
+.logo {
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links a:hover {
+  color: #ffc107;
+}
+
+.nav-links li:hover {
+  color: #ffc107;
+  cursor: pointer;
+}
+
+/* 🔹 Hero */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.primary-btn {
+  background: #ffc107;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* 🔹 Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background: #f4f4f4;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🔹 Improve Buttons */
+.primary-btn {
+  background: #ffc107;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* 🔹 Responsive Fix */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* 🔹 About */
+.about {
+  padding: 40px;
+  text-align: center;
+}
+
+/* 🔹 Form */
+.form-section {
+  padding: 40px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.form {
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input,
+.form select {
+  padding: 10px;
+}
+
+/* 🔹 Courses */
+.courses {
+  padding: 40px;
+  text-align: center;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.course-card {
+  background: #0a1f44;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* 🔹 Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background: #0a1f44;
+  color: white;
+  padding: 20px;
+}
+
+
+
+/* 🔹 Hero Carousel */
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(10, 31, 68, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* 🔹 Social Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+}
+
+/* 🔹 Form Section Layout */
+.form-section {
+  padding: 50px;
+  background: #f4f4f4;
+}
+
+/* Container */
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* 🔹 Image */
+.form-image img {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 🔹 Form Content */
+.form-content {
+  max-width: 350px;
+}
+
+.form-subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.success-msg {
+  margin-top: 10px;
+  color: green;
+  font-weight: 500;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.form input,
+.form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form-image img {
+    width: 100%;
+  }
+}
+
+/* 🔹 Button */
+.primary-btn {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #ffc107;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 🔹 Hidden Info Animation */
+.hero-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.hero-info.show {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+/* 🔹 List */
+.hero-info ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.form-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.form-image img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.course-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.service-grid,
+.adv-grid,
+.batch-grid,
+.review-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-card,
+.service-grid div,
+.adv-grid div,
+.batch-grid div,
+.review-grid div {
+  background: #0a1f44;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* 🔹 Auth container */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* 🔹 Row layout (SIDE BY SIDE) */
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* spacing between name & logout */
+}
+
+/* 🔹 Profile */
+.profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ffd166;
+  font-size: 14px;
+}
+
+/* 🔹 Icon */
+.icon {
+  font-size: 16px;
+}
+
+/* 🔹 Username fix */
+.profile-btn span {
+  max-width: 90px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 🔹 Logout Button */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  background: transparent;
+  border: 1px solid #ffd166;
+  color: #ffd166;
+
+  padding: 4px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #ffd166;
+  color: #0a1f44;
+}
+.view-more {
+  display: flex;
+  justify-content: center;   /* 🔥 center horizontally */
+  margin-top: 20px;
+}.view-btn {
+  padding: 10px 25px;
+  background: #1e3a5f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #162d47;
+  transform: translateY(-2px);
+}
+/* ============================= */
+/* RESET */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a1f44;
+  color: white;
+  padding: 15px 40px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.logo a:hover {
+  color: #ffd84d;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffc107;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+.primary-btn {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #ffc107;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #e6ac00;
+}
+
+/* ============================= */
+/* FEATURES */
+/* ============================= */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background: #f4f4f4;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ============================= */
+/* COURSES */
+/* ============================= */
+.courses {
+  padding: 40px;
+  text-align: center;
+}
+
+/* ✅ FIX: use GRID (remove flex conflict) */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* ============================= */
+/* COURSE CARD */
+/* ============================= */
+.course-card {
+  background: white;
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 🔥 equal height */
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.course-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.course-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* TITLE */
+.course-info h3 {
+  font-size: 18px;
+  color: #1e3a5f;
+  margin-bottom: 5px;
+}
+
+/* TEXT */
+.instructor {
+  font-size: 14px;
+  color: #666;
+}
+
+.rating {
+  font-size: 14px;
+  color: #f59e0b;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: auto;
+}
+
+/* ============================= */
+/* VIEW MORE BUTTON */
+/* ============================= */
+.view-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.view-btn {
+  padding: 10px 25px;
+  background: #1e3a5f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #162d47;
+}
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+.form-section {
+  padding: 50px;
+  background: #f4f4f4;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.form-image img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.form-content {
+  max-width: 350px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input,
+.form select,
+.form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ============================= */
+/* PROFILE */
+/* ============================= */
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-btn span {
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* LOGOUT */
+.logout-btn {
+  background: transparent;
+  border: 1px solid #ffc107;
+  color: #ffc107;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #ffc107;
+  color: #0a1f44;
+}
+
+/* ============================= */
+/* SOCIAL */
+/* ============================= */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-card img {
+    height: 140px;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,142 @@
+/* =========================
+   GLOBAL QUIZ CONTAINER
+========================= */
+
+.quiz-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   GRID (Quiz List)
+========================= */
+
+.quiz-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* =========================
+   QUIZ CARD (Used everywhere)
+========================= */
+
+.quiz-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.quiz-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   HEADINGS & TEXT
+========================= */
+
+.quiz-card h2,
+.quiz-card h3,
+.quiz-card h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.quiz-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* =========================
+   INPUT FIELDS
+========================= */
+
+.quiz-card input,
+.quiz-card textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.quiz-card input:focus,
+.quiz-card textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: #357bd8;
+}
+
+/* =========================
+   QUIZ QUESTIONS (Attempt Page)
+========================= */
+
+.quiz-card label {
+    display: block;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #f7f7f7;
+    transition: 0.2s;
+}
+
+.quiz-card label:hover {
+    background: #eaf3ff;
+}
+
+.quiz-card input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* =========================
+   SUBMIT SCORE DISPLAY
+========================= */
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    font-size: 20px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

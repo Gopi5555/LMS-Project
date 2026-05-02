@@ -1,0 +1,102 @@
+/* 🔹 Page */
+.placement-page {
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🔹 Header */
+.placement-header {
+  text-align: center;
+  padding: 40px;
+  background: #4d7fd4;
+  color: white;
+}
+
+/* 🔹 Stats */
+.placement-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background: #f4f4f4;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 🔹 Students */
+.placed-students {
+  padding: 40px;
+  text-align: center;
+}
+
+.student-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.student-card {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.student-card img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+/* 🔹 Partners */
+.partners {
+  padding: 40px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.partner-logos {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.partner-logos img {
+  width: 120px;
+}
+
+/* 🔹 Process */
+.process {
+  padding: 40px;
+  text-align: center;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.process-steps div {
+  background: #0a1f44;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* 🔹 CTA */
+.placement-cta {
+  text-align: center;
+  padding: 40px;
+  background: #007bff;
+  color: white;
+}
+
+.placement-cta button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #ffc107;
+  cursor: pointer;
+}

@@ -1,0 +1,245 @@
+/* ============================= */
+/* COURSE SECTION */
+/* ============================= */
+
+.courses {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* ============================= */
+/* COURSE GRID */
+/* ============================= */
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+
+}
+/* ============================= */
+/* COURSE CARD */
+/* ============================= */
+
+.course-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================= */
+/* IMAGE */
+/* ============================= */
+
+.course-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+/* ============================= */
+/* CONTENT */
+/* ============================= */
+
+.course-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.course-info h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #1e3a5f;
+}
+
+.instructor {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.rating {
+  font-size: 14px;
+  color: #f59e0b;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
+.enroll-btn {
+  width: 100%;
+  padding: 10px;
+  background: #1e3a5f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.enroll-btn:hover {
+  background: #162d47;
+}
+
+/* ============================= */
+/* VIEW MORE BUTTON */
+/* ============================= */
+
+.view-more {
+  margin-top: 25px;
+}
+
+.view-btn {
+  padding: 10px 25px;
+  background: #ffd166;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.view-btn:hover {
+  background: #e6b94d;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .course-img {
+    height: 140px;
+  }
+}
+
+
+
+/* ============================= */
+/* FORM PAGE BACKGROUND */
+/* ============================= */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  /* soft gradient (matches your theme) */
+  background: linear-gradient(135deg, #f5f7fb, #e4ecf7, #dbe7f5);
+}
+
+/* ============================= */
+/* FORM CARD */
+/* ============================= */
+
+.form-card {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 350px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.form-card h2 {
+  margin-bottom: 20px;
+  color: #1e3a5f;
+}
+
+/* ============================= */
+/* INPUT FIELDS */
+/* ============================= */
+
+.form-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+
+  transition: 0.3s;
+}
+
+/* focus effect */
+.form-card input:focus {
+  border-color: #1e3a5f;
+  box-shadow: 0 0 5px rgba(30, 58, 95, 0.3);
+}
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
+.form-card button {
+  width: 100%;
+  padding: 10px;
+
+  background: #1e3a5f;
+  color: #fff;
+
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.form-card button:hover {
+  background: #162d47;
+  transform: translateY(-2px);
+}
+
+/* ============================= */
+/* MESSAGE */
+/* ============================= */
+
+.form-card p {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* success */
+.form-card p:contains("✅") {
+  color: green;
+}
+
+/* error */
+.form-card p:contains("❌") {
+  color: red;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 480px) {
+  .form-card {
+    width: 90%;
+  }
+}
